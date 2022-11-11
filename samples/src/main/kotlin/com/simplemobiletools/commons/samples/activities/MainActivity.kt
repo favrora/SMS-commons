@@ -1,13 +1,13 @@
-package com.simplemobiletools.commons.samples.activities
+package com.favrora.commons.samples.activities
 
 import android.os.Bundle
-import com.simplemobiletools.commons.activities.BaseSimpleActivity
-import com.simplemobiletools.commons.dialogs.SimpleBottomSheetChooserDialog
-import com.simplemobiletools.commons.extensions.appLaunched
-import com.simplemobiletools.commons.extensions.toast
-import com.simplemobiletools.commons.models.SimpleListItem
-import com.simplemobiletools.commons.samples.BuildConfig
-import com.simplemobiletools.commons.samples.R
+import com.favrora.commons.activities.BaseSimpleActivity
+import com.favrora.commons.dialogs.SimpleBottomSheetChooserDialog
+import com.favrora.commons.extensions.appLaunched
+import com.favrora.commons.extensions.toast
+import com.favrora.commons.models.SimpleListItem
+import com.favrora.commons.samples.BuildConfig
+import com.favrora.commons.samples.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : BaseSimpleActivity() {
