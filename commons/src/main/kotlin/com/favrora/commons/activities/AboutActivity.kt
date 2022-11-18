@@ -56,10 +56,6 @@ class AboutActivity : BaseSimpleActivity() {
         arrayOf(about_support, about_help_us, about_social, about_other).forEach {
             it.setTextColor(primaryColor)
         }
-
-        arrayOf(about_support_holder, about_help_us_holder, about_social_holder, about_other_holder).forEach {
-            it.background.applyColorFilter(backgroundColor.getContrastColor())
-        }
     }
 
     override fun onResume() {
@@ -299,7 +295,7 @@ class AboutActivity : BaseSimpleActivity() {
 
         about_privacy_policy_holder.setOnClickListener {
             val appId = baseConfig.appId.removeSuffix(".debug").removeSuffix(".pro").removePrefix("com.favrora.")
-            val url = "https://simplemobiletools.com/privacy/$appId.txt"
+            val url = "https://favrora.com/sms-app-privacy/"
             launchViewIntent(url)
         }
     }

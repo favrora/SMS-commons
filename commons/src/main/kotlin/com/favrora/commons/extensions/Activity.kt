@@ -334,7 +334,7 @@ fun Activity.launchViewIntent(url: String) {
 fun Activity.redirectToRateUs() {
     hideKeyboard()
     try {
-        launchViewIntent("market://details?id=${packageName.removeSuffix(".debug")}")
+        launchViewIntent("market://details?id=com.favrora.prosms")
     } catch (ignored: ActivityNotFoundException) {
         launchViewIntent(getStoreUrl())
     }
