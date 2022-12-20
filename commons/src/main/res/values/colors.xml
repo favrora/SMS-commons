@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="color_primary">#FFF57C00</color>
-    <color name="color_primary_dark">#FFD76D00</color>
+    <color name="color_primary">#0077FF</color>
+    <color name="color_primary_dark">#0063d4</color>
     <color name="color_accent">@color/color_primary</color>
 
+    <color name="backgroundDark">#182432</color>
+    <color name="dividerDark">#111c28</color>
     <color name="pressed_item_foreground">#08000000</color>
     <color name="activated_item_foreground">#44888888</color>
     <color name="divider_grey">#88808080</color>
