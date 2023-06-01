@@ -18,8 +18,8 @@
     <string name="no_browser_found">Браузер не найден</string>
     <string name="no_email_client_found">Клиент электронной почты не найден</string>
     <string name="set_as">Установить как…</string>
-    <string name="copy_to_clipboard">Копировать в буфер обмена</string>
-    <string name="copy_number_to_clipboard">Копировать номер в буфер обмена</string>
+    <string name="copy_to_clipboard">Скопировать</string>
+    <string name="copy_number_to_clipboard">Скопировать номер</string>
     <string name="value_copied_to_clipboard">Скопировано в буфер обмена</string>
     <string name="value_copied_to_clipboard_show">Скопировано в буфер обмена:\n%s</string>
     <string name="dial_number">Набрать номер</string>

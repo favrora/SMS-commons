@@ -460,7 +460,8 @@ fun Context.isOrWasThankYouInstalled(): Boolean {
 fun Context.isAProApp() = packageName.startsWith("com.favrora.") && packageName.removeSuffix(".debug").endsWith(".pro")
 
 fun Context.getCustomizeColorsString(): String {
-    val textId = if (isOrWasThankYouInstalled()) {
+    // val textId = if (isOrWasThankYouInstalled()) {
+    val textId = if (2 > 1) {
         R.string.customize_colors
     } else {
         R.string.customize_colors_locked

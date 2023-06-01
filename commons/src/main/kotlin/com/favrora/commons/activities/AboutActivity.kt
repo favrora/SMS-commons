@@ -6,6 +6,7 @@ import android.content.Intent.*
 import android.os.Build
 import android.os.Bundle
 import android.os.Handler
+import android.view.View
 import androidx.core.net.toUri
 import com.favrora.commons.R
 import com.favrora.commons.dialogs.ConfirmationAdvancedDialog
@@ -54,7 +55,11 @@ class AboutActivity : BaseSimpleActivity() {
         }
 
         arrayOf(about_support, about_help_us, about_social, about_other).forEach {
-            it.setTextColor(primaryColor)
+            it.setTextColor(textColor)
+        }
+
+        arrayListOf<View>(border_chat, border_chat2).forEach {
+            it.setBackgroundColor(textColor)
         }
     }
 

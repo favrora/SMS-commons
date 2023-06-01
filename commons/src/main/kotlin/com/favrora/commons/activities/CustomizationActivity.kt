@@ -75,9 +75,9 @@ class CustomizationActivity : BaseSimpleActivity() {
                     runOnUiThread {
                         setupThemes()
                         val hideGoogleRelations = resources.getBoolean(R.bool.hide_google_relations) && !isThankYou
-                        apply_to_all_holder.beVisibleIf(
+                        /*apply_to_all_holder.beVisibleIf(
                             storedSharedTheme == null && curSelectedThemeId != THEME_AUTO && curSelectedThemeId != THEME_SYSTEM && !hideGoogleRelations
-                        )
+                        )*/
                     }
                 } catch (e: Exception) {
                     toast(R.string.update_thank_you)
@@ -98,9 +98,9 @@ class CustomizationActivity : BaseSimpleActivity() {
         updateLabelColors(textColor)
         originalAppIconColor = baseConfig.appIconColor
 
-        if (resources.getBoolean(R.bool.hide_google_relations) && !isThankYou) {
+        /*if (resources.getBoolean(R.bool.hide_google_relations) && !isThankYou) {
             apply_to_all_holder.beGone()
-        }
+        }*/
     }
 
     override fun onResume() {
@@ -195,16 +195,17 @@ class CustomizationActivity : BaseSimpleActivity() {
             if (baseConfig.wasAppIconCustomizationWarningShown) {
                 themePickerClicked()
             } else {
-                ConfirmationDialog(this, "", R.string.app_icon_color_warning, R.string.ok, 0) {
+                themePickerClicked()
+                /*ConfirmationDialog(this, "", R.string.app_icon_color_warning, R.string.ok, 0) {
                     baseConfig.wasAppIconCustomizationWarningShown = true
                     themePickerClicked()
-                }
+                }*/
             }
         }
 
-        if (customization_theme.value == getString(R.string.system_default)) {
+        /*if (customization_theme.value == getString(R.string.system_default)) {
             apply_to_all_holder.beGone()
-        }
+        }*/
     }
 
     private fun themePickerClicked() {
@@ -226,9 +227,9 @@ class CustomizationActivity : BaseSimpleActivity() {
             }
 
             val hideGoogleRelations = resources.getBoolean(R.bool.hide_google_relations) && !isThankYou
-            apply_to_all_holder.beVisibleIf(
+            /*apply_to_all_holder.beVisibleIf(
                 curSelectedThemeId != THEME_AUTO && curSelectedThemeId != THEME_SYSTEM && curSelectedThemeId != THEME_SHARED && !hideGoogleRelations
-            )
+            )*/
             updateMenuItemColors(customization_toolbar.menu, true, getCurrentStatusBarColor())
             setupToolbar(customization_toolbar, NavigationIcon.Cross, getCurrentStatusBarColor())
         }
@@ -475,12 +476,13 @@ class CustomizationActivity : BaseSimpleActivity() {
 
         customization_app_icon_color_holder.setOnClickListener {
             if (baseConfig.wasAppIconCustomizationWarningShown) {
-                pickAppIconColor()
+                // pickAppIconColor()
             } else {
-                ConfirmationDialog(this, "", R.string.app_icon_color_warning, R.string.ok, 0) {
+                // pickAppIconColor()
+                /*ConfirmationDialog(this, "", R.string.app_icon_color_warning, R.string.ok, 0) {
                     baseConfig.wasAppIconCustomizationWarningShown = true
                     pickAppIconColor()
-                }
+                }*/
             }
         }
     }
@@ -645,7 +647,7 @@ class CustomizationActivity : BaseSimpleActivity() {
                 }
 
                 baseConfig.wasSharedThemeEverActivated = true
-                apply_to_all_holder.beGone()
+                // apply_to_all_holder.beGone()
                 updateColorTheme(THEME_SHARED)
                 saveChanges(false)
             }

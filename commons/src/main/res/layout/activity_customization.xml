@@ -184,7 +184,8 @@
                 android:layout_below="@+id/customization_accent_color_holder"
                 android:layout_marginTop="@dimen/medium_margin"
                 android:background="?attr/selectableItemBackground"
-                android:padding="@dimen/activity_margin">
+                android:padding="@dimen/activity_margin"
+                android:visibility="gone">
 
                 <com.favrora.commons.views.MyTextView
                     android:id="@+id/customization_app_icon_color_label"
@@ -239,7 +240,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/customization_navigation_bar_color_holder"
                 android:layout_centerHorizontal="true"
-                android:layout_margin="@dimen/big_margin">
+                android:layout_margin="@dimen/big_margin"
+                android:visibility="gone">
 
                 <android.widget.TextView
                     android:id="@+id/apply_to_all"
